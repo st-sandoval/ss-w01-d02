@@ -1,15 +1,25 @@
 package com.ss.w01d02.assignments;
+import java.util.Scanner;
 
 public class MainClass {
 	public static void main(String[] args) {
 		System.out.println(args);
+		Scanner scanny = new Scanner(System.in);
 		
 		for(String arg:args) {
-			System.out.println(arg);
+			Integer in = scanny.nextInt();
+			Double dou = scanny.nextDouble();
+			Long lo = scanny.nextLong();
+			Float fl = scanny.nextFloat();
+			System.out.println("arg: " + arg);
+			System.out.println("int: " +  int);
 		}
+		
+		//matrix max and position
 		System.out.println("Matrix max and position: ");
 		twoDee();
 		
+		//shape interface, classes, areas
 		System.out.println("Area of circle: ");
 		Circle circ = new Circle(4.5);
 		circ.calculateArea();
