@@ -6,7 +6,7 @@ public interface Ishape {
 	
 	public void calculateArea();
 	
-	default void display(String shape, Double area) {
-		System.out.println("The area of your " + shape + " is: " + area);
+	default void display(Double area) {
+		System.out.println("The area of your shape is: " + area);
 	};
 }
